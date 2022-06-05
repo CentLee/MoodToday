@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F97632A1284234AA00AE6854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632A0284234AA00AE6854 /* AppDelegate.swift */; };
-		F97632A3284234AA00AE6854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632A2284234AA00AE6854 /* SceneDelegate.swift */; };
 		F97632A5284234AA00AE6854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632A4284234AA00AE6854 /* ViewController.swift */; };
 		F97632A8284234AA00AE6854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97632A6284234AA00AE6854 /* Main.storyboard */; };
 		F97632AA284234AB00AE6854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97632A9284234AB00AE6854 /* Assets.xcassets */; };
@@ -16,6 +15,13 @@
 		F97632B8284234AB00AE6854 /* MoodTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632B7284234AB00AE6854 /* MoodTodayTests.swift */; };
 		F97632C2284234AB00AE6854 /* MoodTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */; };
 		F97632C4284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */; };
+		F97632D22842357A00AE6854 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F97632D12842357A00AE6854 /* RxCocoa */; };
+		F97632D42842357A00AE6854 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F97632D32842357A00AE6854 /* RxSwift */; };
+		F97632D72842367200AE6854 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F97632D62842367200AE6854 /* Alamofire */; };
+		F97632DA2842369F00AE6854 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F97632D92842369F00AE6854 /* Kingfisher */; };
+		F97632DD284236BD00AE6854 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F97632DC284236BD00AE6854 /* Then */; };
+		F97632E0284236FD00AE6854 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F97632DF284236FD00AE6854 /* SnapKit */; };
+		F97632E72842378500AE6854 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632E62842378500AE6854 /* AppDIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 /* Begin PBXFileReference section */
 		F976329D284234AA00AE6854 /* MoodToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632A0284234AA00AE6854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F97632A2284234AA00AE6854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F97632A4284234AA00AE6854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F97632A7284234AA00AE6854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F97632A9284234AB00AE6854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,8 @@
 		F97632BD284234AB00AE6854 /* MoodTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTodayUITests.swift; sourceTree = "<group>"; };
 		F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F97632E12842371C00AE6854 /* MoodToday-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoodToday-Bridging-Header.h"; sourceTree = "<group>"; };
+		F97632E62842378500AE6854 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97632DD284236BD00AE6854 /* Then in Frameworks */,
+				F97632DA2842369F00AE6854 /* Kingfisher in Frameworks */,
+				F97632D72842367200AE6854 /* Alamofire in Frameworks */,
+				F97632E0284236FD00AE6854 /* SnapKit in Frameworks */,
+				F97632D42842357A00AE6854 /* RxSwift in Frameworks */,
+				F97632D22842357A00AE6854 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +112,17 @@
 		F976329F284234AA00AE6854 /* MoodToday */ = {
 			isa = PBXGroup;
 			children = (
+				F97632E52842377100AE6854 /* Presentation Layer */,
+				F97632E42842376B00AE6854 /* Data Layer */,
+				F97632E32842376500AE6854 /* Domain Layer */,
+				F97632E22842376000AE6854 /* Application Layer */,
 				F97632A0284234AA00AE6854 /* AppDelegate.swift */,
-				F97632A2284234AA00AE6854 /* SceneDelegate.swift */,
 				F97632A4284234AA00AE6854 /* ViewController.swift */,
 				F97632A6284234AA00AE6854 /* Main.storyboard */,
 				F97632A9284234AB00AE6854 /* Assets.xcassets */,
 				F97632AB284234AB00AE6854 /* LaunchScreen.storyboard */,
 				F97632AE284234AB00AE6854 /* Info.plist */,
+				F97632E12842371C00AE6854 /* MoodToday-Bridging-Header.h */,
 			);
 			path = MoodToday;
 			sourceTree = "<group>";
@@ -127,6 +144,35 @@
 			path = MoodTodayUITests;
 			sourceTree = "<group>";
 		};
+		F97632E22842376000AE6854 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F97632E62842378500AE6854 /* AppDIContainer.swift */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		F97632E32842376500AE6854 /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		F97632E42842376B00AE6854 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F97632E52842377100AE6854 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +189,14 @@
 			dependencies = (
 			);
 			name = MoodToday;
+			packageProductDependencies = (
+				F97632D12842357A00AE6854 /* RxCocoa */,
+				F97632D32842357A00AE6854 /* RxSwift */,
+				F97632D62842367200AE6854 /* Alamofire */,
+				F97632D92842369F00AE6854 /* Kingfisher */,
+				F97632DC284236BD00AE6854 /* Then */,
+				F97632DF284236FD00AE6854 /* SnapKit */,
+			);
 			productName = MoodToday;
 			productReference = F976329D284234AA00AE6854 /* MoodToday.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +269,13 @@
 				Base,
 			);
 			mainGroup = F9763294284234AA00AE6854;
+			packageReferences = (
+				F97632D02842357A00AE6854 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F97632D52842367200AE6854 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F97632D82842369F00AE6854 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F97632DB284236BD00AE6854 /* XCRemoteSwiftPackageReference "Then" */,
+				F97632DE284236FD00AE6854 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F976329E284234AA00AE6854 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +321,7 @@
 			files = (
 				F97632A5284234AA00AE6854 /* ViewController.swift in Sources */,
 				F97632A1284234AA00AE6854 /* AppDelegate.swift in Sources */,
-				F97632A3284234AA00AE6854 /* SceneDelegate.swift in Sources */,
+				F97632E72842378500AE6854 /* AppDIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +504,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Cent.MoodToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MoodToday-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,8 +535,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Cent.MoodToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MoodToday-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -602,6 +669,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F97632D02842357A00AE6854 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		F97632D52842367200AE6854 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+		F97632D82842369F00AE6854 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		F97632DB284236BD00AE6854 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		F97632DE284236FD00AE6854 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F97632D12842357A00AE6854 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F97632D02842357A00AE6854 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F97632D32842357A00AE6854 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F97632D02842357A00AE6854 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F97632D62842367200AE6854 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F97632D52842367200AE6854 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F97632D92842369F00AE6854 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F97632D82842369F00AE6854 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F97632DC284236BD00AE6854 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F97632DB284236BD00AE6854 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		F97632DF284236FD00AE6854 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F97632DE284236FD00AE6854 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9763295284234AA00AE6854 /* Project object */;
 }
