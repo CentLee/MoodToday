@@ -1,11 +1,37 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
-    </dependencies>
-    <objects>
-        <customObject id="-2" userLabel="File's Owner"/>
-        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-    </objects>
-</document>
+### warning으로 처리할 지 error로 처리할 지 그 레벨을 설정할 수 있습니다.
+disable_rule:
+included:
+excluded:
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+
+
+
+#- warning, error 모두 있는 규칙 -#
+
+### 한 줄로는 warning의 수준만 설정할 수 있습니다.
+line_length: 110  # implicitly
+
+### 배열을 사용해 warning과 error의 수준을 모두 설정할 수 있습니다.
+type_body_length:
+  - 300 # warning, implicitly
+  - 400 # error, implicitly
+
+file_length:
+  warning: 500  # explicitly
+  error: 1200  # explicitly
+  
+  
+  
+#- 네이밍 규칙 -#
+
+### min_length 및 max_length에 대한 warning/error를 설정할 수 있습니다.
+### 규칙에 제외되는 특수한 이름도 지정할 수 있습니다.
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: iPhone # excluded via string
+  allowed_symbols: ["_"] # these are allowed in type names

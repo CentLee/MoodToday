@@ -17,6 +17,10 @@
 		F96666D1284CF16000E5DF64 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D0284CF16000E5DF64 /* SwiftDate */; };
 		F96666D4284CF17000E5DF64 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D3284CF17000E5DF64 /* Moya */; };
 		F96666D6284CF17000E5DF64 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D5284CF17000E5DF64 /* RxMoya */; };
+		F96666DE284CF27E00E5DF64 /* TodayWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666DD284CF27E00E5DF64 /* TodayWeatherViewController.swift */; };
+		F96666E2284CF2C800E5DF64 /* WeatherResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666E1284CF2C800E5DF64 /* WeatherResponseDTO.swift */; };
+		F96666E4284CF2E800E5DF64 /* TodayWeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666E3284CF2E800E5DF64 /* TodayWeatherEntity.swift */; };
+		F96666E6284CF3A900E5DF64 /* TodayWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666E5284CF3A900E5DF64 /* TodayWeatherViewModel.swift */; };
 		F97632B8284234AB00AE6854 /* MoodTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632B7284234AB00AE6854 /* MoodTodayTests.swift */; };
 		F97632C2284234AB00AE6854 /* MoodTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */; };
 		F97632C4284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */; };
@@ -55,6 +59,10 @@
 		F96666C5284CF0F300E5DF64 /* UIPreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPreView.swift; sourceTree = "<group>"; };
 		F96666C6284CF0F300E5DF64 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96666CE284CF10E00E5DF64 /* MoodToday-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MoodToday-Bridging-Header.h"; sourceTree = "<group>"; };
+		F96666DD284CF27E00E5DF64 /* TodayWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherViewController.swift; sourceTree = "<group>"; };
+		F96666E1284CF2C800E5DF64 /* WeatherResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseDTO.swift; sourceTree = "<group>"; };
+		F96666E3284CF2E800E5DF64 /* TodayWeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherEntity.swift; sourceTree = "<group>"; };
+		F96666E5284CF3A900E5DF64 /* TodayWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherViewModel.swift; sourceTree = "<group>"; };
 		F976329D284234AA00AE6854 /* MoodToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632AE284234AB00AE6854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97632B3284234AB00AE6854 /* MoodTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +120,54 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F96666D7284CF1A000E5DF64 /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F96666DA284CF1AD00E5DF64 /* UseCase */,
+				F96666D9284CF1AA00E5DF64 /* Entities */,
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		F96666D8284CF1A500E5DF64 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F96666DF284CF2AE00E5DF64 /* DTO */,
+				F96666DB284CF1B300E5DF64 /* Networking */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F96666D9284CF1AA00E5DF64 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F96666E3284CF2E800E5DF64 /* TodayWeatherEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F96666DA284CF1AD00E5DF64 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		F96666DB284CF1B300E5DF64 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F96666DF284CF2AE00E5DF64 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				F96666E1284CF2C800E5DF64 /* WeatherResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		F9763294284234AA00AE6854 = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +193,11 @@
 		F976329F284234AA00AE6854 /* MoodToday */ = {
 			isa = PBXGroup;
 			children = (
-				F96666BD284CF0F300E5DF64 /* Supporting Files */,
-				F97632E52842377100AE6854 /* Presentation Layer */,
 				F97632E22842376000AE6854 /* Application Layer */,
+				F97632E52842377100AE6854 /* Presentation Layer */,
+				F96666D8284CF1A500E5DF64 /* Data Layer */,
+				F96666D7284CF1A000E5DF64 /* Domain Layer */,
+				F96666BD284CF0F300E5DF64 /* Supporting Files */,
 				F97632AE284234AB00AE6854 /* Info.plist */,
 			);
 			path = MoodToday;
@@ -173,6 +231,8 @@
 		F97632E52842377100AE6854 /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				F96666DD284CF27E00E5DF64 /* TodayWeatherViewController.swift */,
+				F96666E5284CF3A900E5DF64 /* TodayWeatherViewModel.swift */,
 			);
 			path = "Presentation Layer";
 			sourceTree = "<group>";
@@ -184,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F97632C7284234AB00AE6854 /* Build configuration list for PBXNativeTarget "MoodToday" */;
 			buildPhases = (
+				F96666DC284CF22900E5DF64 /* SwfitLint Script */,
 				F9763299284234AA00AE6854 /* Sources */,
 				F976329A284234AA00AE6854 /* Frameworks */,
 				F976329B284234AA00AE6854 /* Resources */,
@@ -324,13 +385,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F96666DC284CF22900E5DF64 /* SwfitLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwfitLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9763299284234AA00AE6854 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96666E4284CF2E800E5DF64 /* TodayWeatherEntity.swift in Sources */,
+				F96666DE284CF27E00E5DF64 /* TodayWeatherViewController.swift in Sources */,
 				F96666CD284CF0F300E5DF64 /* AppDelegate.swift in Sources */,
+				F96666E6284CF3A900E5DF64 /* TodayWeatherViewModel.swift in Sources */,
 				F96666CC284CF0F300E5DF64 /* UIPreView.swift in Sources */,
+				F96666E2284CF2C800E5DF64 /* WeatherResponseDTO.swift in Sources */,
 				F96666C7284CF0F300E5DF64 /* BaseViewController.swift in Sources */,
 				F97632E72842378500AE6854 /* AppDIContainer.swift in Sources */,
 			);
