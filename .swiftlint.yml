@@ -1,0 +1,39 @@
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+#<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+#    <dependencies>
+#        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+#    </dependencies>
+#    <objects>
+#        <customObject id="-2" userLabel="File's Owner"/>
+#        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+#        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+#    </objects>
+#</document>
+disabled_rules:
+included:
+excluded:
+- /Supporting Files
+
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 110
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: iPhone # excluded via string
+  allowed_symbols: ["_"] # these are allowed in type names
