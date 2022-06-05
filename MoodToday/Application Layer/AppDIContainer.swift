@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+final class AppDIContainer {
+  static let shared: AppDIContainer = AppDIContainer()
+  
+  public func userLocationTodayWeatherDependencies() -> TodayWeatherViewModel {
+    let useCase = FetchTodayWeatherUseCase(repository: TodayWeatherRepository())
+    
+    let viewModel = TodayWeatherViewModel(weatherUseCase: useCase)
+    
+    return viewModel
+  }
+}
