@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>날씨 정보를 받아오기 위해 위치 정보 활용에 대해 승인하시겠습니까?</string>
+	<key>AuthKey</key>
+	<string>3lvr70xYQf%2FqW67Vc4%2FJ%2BN3OHVi7U2ufZLJNZ9MWaJ7ttGYwakVMXKc19RLw6xaym4PTpLXuWjlEQi0gBeyHfg%3D%3D</string>
+	<key>APIURL</key>
+	<string>http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/geetVilageFcst</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
 </dict>

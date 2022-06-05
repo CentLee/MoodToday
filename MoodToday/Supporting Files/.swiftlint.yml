@@ -2,6 +2,8 @@
 disable_rule:
 included:
 excluded:
+- MoodToday/Supporting Files/AppDelegate.swift
+
 force_cast: warning # implicitly
 force_try:
   severity: warning # explicitly
