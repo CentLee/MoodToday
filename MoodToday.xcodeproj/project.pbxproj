@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F97632A1284234AA00AE6854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632A0284234AA00AE6854 /* AppDelegate.swift */; };
-		F97632A5284234AA00AE6854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632A4284234AA00AE6854 /* ViewController.swift */; };
-		F97632A8284234AA00AE6854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97632A6284234AA00AE6854 /* Main.storyboard */; };
-		F97632AA284234AB00AE6854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97632A9284234AB00AE6854 /* Assets.xcassets */; };
-		F97632AD284234AB00AE6854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97632AB284234AB00AE6854 /* LaunchScreen.storyboard */; };
+		F96666C7284CF0F300E5DF64 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666BE284CF0F300E5DF64 /* BaseViewController.swift */; };
+		F96666C8284CF0F300E5DF64 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F96666BF284CF0F300E5DF64 /* .swiftlint.yml */; };
+		F96666C9284CF0F300E5DF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96666C0284CF0F300E5DF64 /* Assets.xcassets */; };
+		F96666CA284CF0F300E5DF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96666C1284CF0F300E5DF64 /* LaunchScreen.storyboard */; };
+		F96666CB284CF0F300E5DF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96666C3284CF0F300E5DF64 /* Main.storyboard */; };
+		F96666CC284CF0F300E5DF64 /* UIPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666C5284CF0F300E5DF64 /* UIPreView.swift */; };
+		F96666CD284CF0F300E5DF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666C6284CF0F300E5DF64 /* AppDelegate.swift */; };
+		F96666D1284CF16000E5DF64 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D0284CF16000E5DF64 /* SwiftDate */; };
+		F96666D4284CF17000E5DF64 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D3284CF17000E5DF64 /* Moya */; };
+		F96666D6284CF17000E5DF64 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D5284CF17000E5DF64 /* RxMoya */; };
 		F97632B8284234AB00AE6854 /* MoodTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632B7284234AB00AE6854 /* MoodTodayTests.swift */; };
 		F97632C2284234AB00AE6854 /* MoodTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */; };
 		F97632C4284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */; };
@@ -42,19 +47,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F96666BE284CF0F300E5DF64 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F96666BF284CF0F300E5DF64 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = "MoodToday/Supporting Files/.swiftlint.yml"; sourceTree = "<group>"; };
+		F96666C0284CF0F300E5DF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F96666C2284CF0F300E5DF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F96666C4284CF0F300E5DF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F96666C5284CF0F300E5DF64 /* UIPreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPreView.swift; sourceTree = "<group>"; };
+		F96666C6284CF0F300E5DF64 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F96666CE284CF10E00E5DF64 /* MoodToday-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MoodToday-Bridging-Header.h"; sourceTree = "<group>"; };
 		F976329D284234AA00AE6854 /* MoodToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F97632A0284234AA00AE6854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F97632A4284234AA00AE6854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F97632A7284234AA00AE6854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F97632A9284234AB00AE6854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F97632AC284234AB00AE6854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F97632AE284234AB00AE6854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97632B3284234AB00AE6854 /* MoodTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632B7284234AB00AE6854 /* MoodTodayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTodayTests.swift; sourceTree = "<group>"; };
 		F97632BD284234AB00AE6854 /* MoodTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTodayUITests.swift; sourceTree = "<group>"; };
 		F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F97632E12842371C00AE6854 /* MoodToday-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoodToday-Bridging-Header.h"; sourceTree = "<group>"; };
 		F97632E62842378500AE6854 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +72,11 @@
 			files = (
 				F97632DD284236BD00AE6854 /* Then in Frameworks */,
 				F97632DA2842369F00AE6854 /* Kingfisher in Frameworks */,
+				F96666D4284CF17000E5DF64 /* Moya in Frameworks */,
 				F97632D72842367200AE6854 /* Alamofire in Frameworks */,
 				F97632E0284236FD00AE6854 /* SnapKit in Frameworks */,
+				F96666D1284CF16000E5DF64 /* SwiftDate in Frameworks */,
+				F96666D6284CF17000E5DF64 /* RxMoya in Frameworks */,
 				F97632D42842357A00AE6854 /* RxSwift in Frameworks */,
 				F97632D22842357A00AE6854 /* RxCocoa in Frameworks */,
 			);
@@ -89,9 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F96666BD284CF0F300E5DF64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F96666BE284CF0F300E5DF64 /* BaseViewController.swift */,
+				F96666C0284CF0F300E5DF64 /* Assets.xcassets */,
+				F96666C1284CF0F300E5DF64 /* LaunchScreen.storyboard */,
+				F96666C3284CF0F300E5DF64 /* Main.storyboard */,
+				F96666C5284CF0F300E5DF64 /* UIPreView.swift */,
+				F96666C6284CF0F300E5DF64 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F9763294284234AA00AE6854 = {
 			isa = PBXGroup;
 			children = (
+				F96666BF284CF0F300E5DF64 /* .swiftlint.yml */,
+				F96666CE284CF10E00E5DF64 /* MoodToday-Bridging-Header.h */,
 				F976329F284234AA00AE6854 /* MoodToday */,
 				F97632B6284234AB00AE6854 /* MoodTodayTests */,
 				F97632C0284234AB00AE6854 /* MoodTodayUITests */,
@@ -112,17 +137,10 @@
 		F976329F284234AA00AE6854 /* MoodToday */ = {
 			isa = PBXGroup;
 			children = (
+				F96666BD284CF0F300E5DF64 /* Supporting Files */,
 				F97632E52842377100AE6854 /* Presentation Layer */,
-				F97632E42842376B00AE6854 /* Data Layer */,
-				F97632E32842376500AE6854 /* Domain Layer */,
 				F97632E22842376000AE6854 /* Application Layer */,
-				F97632A0284234AA00AE6854 /* AppDelegate.swift */,
-				F97632A4284234AA00AE6854 /* ViewController.swift */,
-				F97632A6284234AA00AE6854 /* Main.storyboard */,
-				F97632A9284234AB00AE6854 /* Assets.xcassets */,
-				F97632AB284234AB00AE6854 /* LaunchScreen.storyboard */,
 				F97632AE284234AB00AE6854 /* Info.plist */,
-				F97632E12842371C00AE6854 /* MoodToday-Bridging-Header.h */,
 			);
 			path = MoodToday;
 			sourceTree = "<group>";
@@ -150,20 +168,6 @@
 				F97632E62842378500AE6854 /* AppDIContainer.swift */,
 			);
 			path = "Application Layer";
-			sourceTree = "<group>";
-		};
-		F97632E32842376500AE6854 /* Domain Layer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Domain Layer";
-			sourceTree = "<group>";
-		};
-		F97632E42842376B00AE6854 /* Data Layer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Data Layer";
 			sourceTree = "<group>";
 		};
 		F97632E52842377100AE6854 /* Presentation Layer */ = {
@@ -196,6 +200,9 @@
 				F97632D92842369F00AE6854 /* Kingfisher */,
 				F97632DC284236BD00AE6854 /* Then */,
 				F97632DF284236FD00AE6854 /* SnapKit */,
+				F96666D0284CF16000E5DF64 /* SwiftDate */,
+				F96666D3284CF17000E5DF64 /* Moya */,
+				F96666D5284CF17000E5DF64 /* RxMoya */,
 			);
 			productName = MoodToday;
 			productReference = F976329D284234AA00AE6854 /* MoodToday.app */;
@@ -275,6 +282,8 @@
 				F97632D82842369F00AE6854 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				F97632DB284236BD00AE6854 /* XCRemoteSwiftPackageReference "Then" */,
 				F97632DE284236FD00AE6854 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F96666CF284CF16000E5DF64 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				F96666D2284CF17000E5DF64 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = F976329E284234AA00AE6854 /* Products */;
 			projectDirPath = "";
@@ -292,9 +301,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F97632AD284234AB00AE6854 /* LaunchScreen.storyboard in Resources */,
-				F97632AA284234AB00AE6854 /* Assets.xcassets in Resources */,
-				F97632A8284234AA00AE6854 /* Main.storyboard in Resources */,
+				F96666CB284CF0F300E5DF64 /* Main.storyboard in Resources */,
+				F96666C8284CF0F300E5DF64 /* .swiftlint.yml in Resources */,
+				F96666CA284CF0F300E5DF64 /* LaunchScreen.storyboard in Resources */,
+				F96666C9284CF0F300E5DF64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F97632A5284234AA00AE6854 /* ViewController.swift in Sources */,
-				F97632A1284234AA00AE6854 /* AppDelegate.swift in Sources */,
+				F96666CD284CF0F300E5DF64 /* AppDelegate.swift in Sources */,
+				F96666CC284CF0F300E5DF64 /* UIPreView.swift in Sources */,
+				F96666C7284CF0F300E5DF64 /* BaseViewController.swift in Sources */,
 				F97632E72842378500AE6854 /* AppDIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,20 +369,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F97632A6284234AA00AE6854 /* Main.storyboard */ = {
+		F96666C1284CF0F300E5DF64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F97632A7284234AA00AE6854 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F97632AB284234AB00AE6854 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F97632AC284234AB00AE6854 /* Base */,
+				F96666C2284CF0F300E5DF64 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F96666C3284CF0F300E5DF64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F96666C4284CF0F300E5DF64 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -671,6 +682,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F96666CF284CF16000E5DF64 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F96666D2284CF17000E5DF64 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 		F97632D02842357A00AE6854 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -714,6 +741,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F96666D0284CF16000E5DF64 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F96666CF284CF16000E5DF64 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		F96666D3284CF17000E5DF64 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F96666D2284CF17000E5DF64 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		F96666D5284CF17000E5DF64 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F96666D2284CF17000E5DF64 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
 		F97632D12842357A00AE6854 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F97632D02842357A00AE6854 /* XCRemoteSwiftPackageReference "RxSwift" */;
