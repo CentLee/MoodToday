@@ -25,7 +25,8 @@
 		F96666F2284D267600E5DF64 /* TodayWeatherRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666F1284D267600E5DF64 /* TodayWeatherRepositoryInterface.swift */; };
 		F96666F4284D268600E5DF64 /* TodayWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666F3284D268600E5DF64 /* TodayWeatherRepository.swift */; };
 		F96666F7284D27C500E5DF64 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666F6284D27C500E5DF64 /* WeatherAPI.swift */; };
-		F96666F9284D33CB00E5DF64 /* TodayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666F8284D33CB00E5DF64 /* TodayWeatherView.swift */; };
+		F96666F9284D33CB00E5DF64 /* TodayWeatherSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666F8284D33CB00E5DF64 /* TodayWeatherSummaryView.swift */; };
+		F966670728530B1400E5DF64 /* TodayWeatherStackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */; };
 		F97632B8284234AB00AE6854 /* MoodTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632B7284234AB00AE6854 /* MoodTodayTests.swift */; };
 		F97632C2284234AB00AE6854 /* MoodTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */; };
 		F97632C4284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */; };
@@ -71,7 +72,8 @@
 		F96666F1284D267600E5DF64 /* TodayWeatherRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherRepositoryInterface.swift; sourceTree = "<group>"; };
 		F96666F3284D268600E5DF64 /* TodayWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherRepository.swift; sourceTree = "<group>"; };
 		F96666F6284D27C500E5DF64 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
-		F96666F8284D33CB00E5DF64 /* TodayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherView.swift; sourceTree = "<group>"; };
+		F96666F8284D33CB00E5DF64 /* TodayWeatherSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherSummaryView.swift; sourceTree = "<group>"; };
+		F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherStackItemView.swift; sourceTree = "<group>"; };
 		F976329D284234AA00AE6854 /* MoodToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632AE284234AB00AE6854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97632B3284234AB00AE6854 /* MoodTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,7 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				F96666DD284CF27E00E5DF64 /* TodayWeatherViewController.swift */,
-				F96666F8284D33CB00E5DF64 /* TodayWeatherView.swift */,
+				F96666F8284D33CB00E5DF64 /* TodayWeatherSummaryView.swift */,
+				F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -469,7 +472,7 @@
 				F96666DE284CF27E00E5DF64 /* TodayWeatherViewController.swift in Sources */,
 				F96666CD284CF0F300E5DF64 /* AppDelegate.swift in Sources */,
 				F96666F4284D268600E5DF64 /* TodayWeatherRepository.swift in Sources */,
-				F96666F9284D33CB00E5DF64 /* TodayWeatherView.swift in Sources */,
+				F96666F9284D33CB00E5DF64 /* TodayWeatherSummaryView.swift in Sources */,
 				F96666F2284D267600E5DF64 /* TodayWeatherRepositoryInterface.swift in Sources */,
 				F96666E6284CF3A900E5DF64 /* TodayWeatherViewModel.swift in Sources */,
 				F96666CC284CF0F300E5DF64 /* UIPreView.swift in Sources */,
@@ -477,6 +480,7 @@
 				F96666F7284D27C500E5DF64 /* WeatherAPI.swift in Sources */,
 				F96666C7284CF0F300E5DF64 /* BaseViewController.swift in Sources */,
 				F97632E72842378500AE6854 /* AppDIContainer.swift in Sources */,
+				F966670728530B1400E5DF64 /* TodayWeatherStackItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
