@@ -7,19 +7,20 @@
 
 import Foundation
 
-final class TodayWeatherViewController: BaseViewController<TodayWeatherSummaryView> {
+final class TodayWeatherSummaryViewController: BaseViewController<TodayWeatherSummaryView> {
   
   fileprivate var todayWeatherView: TodayWeatherSummaryView {
     return self.view as! TodayWeatherSummaryView
   }
-  private let viewModel: TodayWeatherViewModel!
+  
+  private var viewModel: TodayWeatherViewModel! = nil
   
   override func loadView() {
     self.view = TodayWeatherSummaryView()
   }
 
   convenience init(viewModel: TodayWeatherViewModel) {
-    super.init()
+    self.init()
     
     self.viewModel = viewModel
   }

@@ -23,7 +23,7 @@ final class TodayWeatherStackItemView: UIView {
   lazy var stackItemMainStackView: UIStackView = UIStackView().then {
     $0.axis = .horizontal
     $0.distribution = .equalCentering
-    $0.spacing = .5
+    $0.spacing = 5
   }
   
   
