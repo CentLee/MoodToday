@@ -16,6 +16,10 @@ enum WeatherAPI {
 }
 
 extension WeatherAPI: TargetType {
+  var headers: [String : String]? {
+    nil
+  }
+  
   var baseURL: URL {
     return getBaseUrl()
   }
@@ -51,7 +55,7 @@ extension WeatherAPI {
   func getBaseUrl() -> URL {
     guard let infoDic : [String : Any] = Bundle.main.infoDictionary,
           let urlString: String = infoDic["APIURL"] as? String,
-          let serviceKey: String = infoDic["AuthKey"] as? String
+          let serviceKey: String = infoDic["AuthKey"] as? String,
           let url = URL(string: "\(urlString)?serviceKey=\(serviceKey)") else { return URL(string: "")!}
     return url
   }

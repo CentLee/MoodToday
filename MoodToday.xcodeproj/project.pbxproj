@@ -17,7 +17,7 @@
 		F96666D1284CF16000E5DF64 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D0284CF16000E5DF64 /* SwiftDate */; };
 		F96666D4284CF17000E5DF64 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D3284CF17000E5DF64 /* Moya */; };
 		F96666D6284CF17000E5DF64 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F96666D5284CF17000E5DF64 /* RxMoya */; };
-		F96666DE284CF27E00E5DF64 /* TodayWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666DD284CF27E00E5DF64 /* TodayWeatherViewController.swift */; };
+		F96666DE284CF27E00E5DF64 /* TodayWeatherSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666DD284CF27E00E5DF64 /* TodayWeatherSummaryViewController.swift */; };
 		F96666E2284CF2C800E5DF64 /* WeatherResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666E1284CF2C800E5DF64 /* WeatherResponseDTO.swift */; };
 		F96666E4284CF2E800E5DF64 /* TodayWeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666E3284CF2E800E5DF64 /* TodayWeatherEntity.swift */; };
 		F96666E6284CF3A900E5DF64 /* TodayWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666E5284CF3A900E5DF64 /* TodayWeatherViewModel.swift */; };
@@ -27,6 +27,15 @@
 		F96666F7284D27C500E5DF64 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666F6284D27C500E5DF64 /* WeatherAPI.swift */; };
 		F96666F9284D33CB00E5DF64 /* TodayWeatherSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96666F8284D33CB00E5DF64 /* TodayWeatherSummaryView.swift */; };
 		F966670728530B1400E5DF64 /* TodayWeatherStackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */; };
+		F966670D2855BFAA00E5DF64 /* TodayWeatherContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966670C2855BFAA00E5DF64 /* TodayWeatherContainerViewController.swift */; };
+		F966670F2855BFB800E5DF64 /* TodayWeatherContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966670E2855BFB800E5DF64 /* TodayWeatherContainerView.swift */; };
+		F96667112855C1BE00E5DF64 /* TodayWeatherGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96667102855C1BE00E5DF64 /* TodayWeatherGraphViewController.swift */; };
+		F96667132855C1C600E5DF64 /* TodayWeahterGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96667122855C1C600E5DF64 /* TodayWeahterGraphView.swift */; };
+		F96667162855C38700E5DF64 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = F96667152855C38700E5DF64 /* Charts */; };
+		F96667182855CE9000E5DF64 /* TodayWeatherSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96667172855CE9000E5DF64 /* TodayWeatherSegmentView.swift */; };
+		F966671B2855CF2B00E5DF64 /* gConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966671A2855CF2B00E5DF64 /* gConstant.swift */; };
+		F966671D2855F8FF00E5DF64 /* ParticulateMatterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966671C2855F8FF00E5DF64 /* ParticulateMatterView.swift */; };
+		F966671F2855FC6600E5DF64 /* ParticulateMatterCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966671E2855FC6600E5DF64 /* ParticulateMatterCircleView.swift */; };
 		F97632B8284234AB00AE6854 /* MoodTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632B7284234AB00AE6854 /* MoodTodayTests.swift */; };
 		F97632C2284234AB00AE6854 /* MoodTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */; };
 		F97632C4284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */; };
@@ -64,7 +73,7 @@
 		F96666C4284CF0F300E5DF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F96666C5284CF0F300E5DF64 /* UIPreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPreView.swift; sourceTree = "<group>"; };
 		F96666C6284CF0F300E5DF64 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F96666DD284CF27E00E5DF64 /* TodayWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherViewController.swift; sourceTree = "<group>"; };
+		F96666DD284CF27E00E5DF64 /* TodayWeatherSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherSummaryViewController.swift; sourceTree = "<group>"; };
 		F96666E1284CF2C800E5DF64 /* WeatherResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseDTO.swift; sourceTree = "<group>"; };
 		F96666E3284CF2E800E5DF64 /* TodayWeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherEntity.swift; sourceTree = "<group>"; };
 		F96666E5284CF3A900E5DF64 /* TodayWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherViewModel.swift; sourceTree = "<group>"; };
@@ -74,6 +83,14 @@
 		F96666F6284D27C500E5DF64 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		F96666F8284D33CB00E5DF64 /* TodayWeatherSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherSummaryView.swift; sourceTree = "<group>"; };
 		F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherStackItemView.swift; sourceTree = "<group>"; };
+		F966670C2855BFAA00E5DF64 /* TodayWeatherContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherContainerViewController.swift; sourceTree = "<group>"; };
+		F966670E2855BFB800E5DF64 /* TodayWeatherContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherContainerView.swift; sourceTree = "<group>"; };
+		F96667102855C1BE00E5DF64 /* TodayWeatherGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherGraphViewController.swift; sourceTree = "<group>"; };
+		F96667122855C1C600E5DF64 /* TodayWeahterGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeahterGraphView.swift; sourceTree = "<group>"; };
+		F96667172855CE9000E5DF64 /* TodayWeatherSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherSegmentView.swift; sourceTree = "<group>"; };
+		F966671A2855CF2B00E5DF64 /* gConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gConstant.swift; sourceTree = "<group>"; };
+		F966671C2855F8FF00E5DF64 /* ParticulateMatterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticulateMatterView.swift; sourceTree = "<group>"; };
+		F966671E2855FC6600E5DF64 /* ParticulateMatterCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticulateMatterCircleView.swift; sourceTree = "<group>"; };
 		F976329D284234AA00AE6854 /* MoodToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632AE284234AB00AE6854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97632B3284234AB00AE6854 /* MoodTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +111,7 @@
 				F96666D4284CF17000E5DF64 /* Moya in Frameworks */,
 				F97632D72842367200AE6854 /* Alamofire in Frameworks */,
 				F97632E0284236FD00AE6854 /* SnapKit in Frameworks */,
+				F96667162855C38700E5DF64 /* Charts in Frameworks */,
 				F96666D1284CF16000E5DF64 /* SwiftDate in Frameworks */,
 				F96666D6284CF17000E5DF64 /* RxMoya in Frameworks */,
 				F97632D42842357A00AE6854 /* RxSwift in Frameworks */,
@@ -121,6 +139,7 @@
 		F96666BD284CF0F300E5DF64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F96667192855CF2400E5DF64 /* Utils */,
 				F96666BE284CF0F300E5DF64 /* BaseViewController.swift */,
 				F96666C0284CF0F300E5DF64 /* Assets.xcassets */,
 				F96666C1284CF0F300E5DF64 /* LaunchScreen.storyboard */,
@@ -186,9 +205,9 @@
 		F96666E9284D24CA00E5DF64 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F96666DD284CF27E00E5DF64 /* TodayWeatherViewController.swift */,
-				F96666F8284D33CB00E5DF64 /* TodayWeatherSummaryView.swift */,
-				F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */,
+				F966670B2855BF8E00E5DF64 /* TodayWeatherGraphView */,
+				F966670A2855BF8400E5DF64 /* TodayWeatherView */,
+				F96667092855BF6B00E5DF64 /* TodayWeatherContainer */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +242,45 @@
 				F96666F6284D27C500E5DF64 /* WeatherAPI.swift */,
 			);
 			path = APIs;
+			sourceTree = "<group>";
+		};
+		F96667092855BF6B00E5DF64 /* TodayWeatherContainer */ = {
+			isa = PBXGroup;
+			children = (
+				F966670C2855BFAA00E5DF64 /* TodayWeatherContainerViewController.swift */,
+				F966670E2855BFB800E5DF64 /* TodayWeatherContainerView.swift */,
+				F96667172855CE9000E5DF64 /* TodayWeatherSegmentView.swift */,
+			);
+			path = TodayWeatherContainer;
+			sourceTree = "<group>";
+		};
+		F966670A2855BF8400E5DF64 /* TodayWeatherView */ = {
+			isa = PBXGroup;
+			children = (
+				F96666DD284CF27E00E5DF64 /* TodayWeatherSummaryViewController.swift */,
+				F96666F8284D33CB00E5DF64 /* TodayWeatherSummaryView.swift */,
+				F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */,
+				F966671C2855F8FF00E5DF64 /* ParticulateMatterView.swift */,
+				F966671E2855FC6600E5DF64 /* ParticulateMatterCircleView.swift */,
+			);
+			path = TodayWeatherView;
+			sourceTree = "<group>";
+		};
+		F966670B2855BF8E00E5DF64 /* TodayWeatherGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				F96667102855C1BE00E5DF64 /* TodayWeatherGraphViewController.swift */,
+				F96667122855C1C600E5DF64 /* TodayWeahterGraphView.swift */,
+			);
+			path = TodayWeatherGraphView;
+			sourceTree = "<group>";
+		};
+		F96667192855CF2400E5DF64 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F966671A2855CF2B00E5DF64 /* gConstant.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F9763294284234AA00AE6854 = {
@@ -320,6 +378,7 @@
 				F96666D0284CF16000E5DF64 /* SwiftDate */,
 				F96666D3284CF17000E5DF64 /* Moya */,
 				F96666D5284CF17000E5DF64 /* RxMoya */,
+				F96667152855C38700E5DF64 /* Charts */,
 			);
 			productName = MoodToday;
 			productReference = F976329D284234AA00AE6854 /* MoodToday.app */;
@@ -401,6 +460,7 @@
 				F97632DE284236FD00AE6854 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F96666CF284CF16000E5DF64 /* XCRemoteSwiftPackageReference "SwiftDate" */,
 				F96666D2284CF17000E5DF64 /* XCRemoteSwiftPackageReference "Moya" */,
+				F96667142855C38700E5DF64 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = F976329E284234AA00AE6854 /* Products */;
 			projectDirPath = "";
@@ -467,20 +527,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96667112855C1BE00E5DF64 /* TodayWeatherGraphViewController.swift in Sources */,
 				F96666F0284D263A00E5DF64 /* FetchTodayWeatherUseCase.swift in Sources */,
 				F96666E4284CF2E800E5DF64 /* TodayWeatherEntity.swift in Sources */,
-				F96666DE284CF27E00E5DF64 /* TodayWeatherViewController.swift in Sources */,
+				F96667182855CE9000E5DF64 /* TodayWeatherSegmentView.swift in Sources */,
+				F96666DE284CF27E00E5DF64 /* TodayWeatherSummaryViewController.swift in Sources */,
 				F96666CD284CF0F300E5DF64 /* AppDelegate.swift in Sources */,
 				F96666F4284D268600E5DF64 /* TodayWeatherRepository.swift in Sources */,
 				F96666F9284D33CB00E5DF64 /* TodayWeatherSummaryView.swift in Sources */,
 				F96666F2284D267600E5DF64 /* TodayWeatherRepositoryInterface.swift in Sources */,
 				F96666E6284CF3A900E5DF64 /* TodayWeatherViewModel.swift in Sources */,
 				F96666CC284CF0F300E5DF64 /* UIPreView.swift in Sources */,
+				F96667132855C1C600E5DF64 /* TodayWeahterGraphView.swift in Sources */,
+				F966670F2855BFB800E5DF64 /* TodayWeatherContainerView.swift in Sources */,
 				F96666E2284CF2C800E5DF64 /* WeatherResponseDTO.swift in Sources */,
+				F966671F2855FC6600E5DF64 /* ParticulateMatterCircleView.swift in Sources */,
+				F966671D2855F8FF00E5DF64 /* ParticulateMatterView.swift in Sources */,
 				F96666F7284D27C500E5DF64 /* WeatherAPI.swift in Sources */,
+				F966671B2855CF2B00E5DF64 /* gConstant.swift in Sources */,
 				F96666C7284CF0F300E5DF64 /* BaseViewController.swift in Sources */,
 				F97632E72842378500AE6854 /* AppDIContainer.swift in Sources */,
 				F966670728530B1400E5DF64 /* TodayWeatherStackItemView.swift in Sources */,
+				F966670D2855BFAA00E5DF64 /* TodayWeatherContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,13 +654,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
@@ -642,12 +712,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				VALIDATE_PRODUCT = YES;
@@ -679,7 +751,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Cent.MoodToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MoodToday-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -711,7 +783,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Cent.MoodToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MoodToday-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -852,6 +924,14 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		F96667142855C38700E5DF64 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		F97632D02842357A00AE6854 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -909,6 +989,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F96666D2284CF17000E5DF64 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		F96667152855C38700E5DF64 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F96667142855C38700E5DF64 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 		F97632D12842357A00AE6854 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;

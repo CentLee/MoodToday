@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TodayWeatherRepositoryInterface {
-  func fetchTodayWeather() 
+  func fetchTodayWeather(requestValue: FetchTodayWeatherRequestValue) 
 }
