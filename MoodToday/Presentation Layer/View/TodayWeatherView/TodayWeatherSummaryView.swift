@@ -55,25 +55,38 @@ final class TodayWeatherSummaryView: UIView {
   }
   // under 미세먼지 뷰 추가 예정
   
-  lazy var partiView: ParticulateMatterView = ParticulateMatterView().then {
-    _ in
+  lazy var particulateMatterStackView: UIStackView = UIStackView().then {
+    $0.spacing = 10
+    $0.axis = .horizontal
+    $0.distribution = .fillProportionally
+  }
+  
+  lazy var ultraParticulateMatterView: ParticulateMatterStackView = ParticulateMatterStackView().then {
+    $0.particulateMatterNameView.text = "초미세먼지(PM2.5)"
+    $0.mainTitle.text = "12\n㎍/m³"
+    $0.circleView.progressValue = 12
+    $0.particulateMatterConcentrationStateView.text = "좋음"
+  }
+  
+  lazy var particulateMatterView: ParticulateMatterStackView = ParticulateMatterStackView().then {
+    $0.particulateMatterNameView.text = "미세먼지(PM10)"
+    $0.mainTitle.text = "23\n㎍/m³"
+    $0.circleView.progressValue = 23
+    $0.particulateMatterConcentrationStateView.text = "좋음"
+    //$0.particulateMatterCircleView.circleView.ringColor = .
   }
   
   
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    //defineView()
+    defineView()
   }
   
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
-  override func layoutSubviews() {
-    defineView()
-    self.layoutIfNeeded()
-  }
+
 }
 
 extension TodayWeatherSummaryView {
@@ -82,15 +95,19 @@ extension TodayWeatherSummaryView {
     contentScrollView.addSubview(containerView)
     //containerView.addSubview(contentScrollView)
     
-    [headerView, temperatureTitle, weatherSummaryStackView].forEach { containerView.addSubview($0)}
+    [headerView, temperatureTitle, weatherSummaryStackView]
+      .forEach { containerView.addSubview($0)}
     
     headerView.addSubview(locationTitle)
     
-    [humidityStackView, windyStackView, rainStackView].forEach { weatherSummaryStackView.addArrangedSubview($0)}
+    [humidityStackView, windyStackView, rainStackView]
+      .forEach { weatherSummaryStackView.addArrangedSubview($0) }
     
-    containerView.addSubview(partiView)
+    
+    containerView.addSubview(particulateMatterStackView)
   
-  
+    [ultraParticulateMatterView, particulateMatterView]
+      .forEach { particulateMatterStackView.addArrangedSubview($0) }
 
   
     contentScrollView.snp.makeConstraints { make in
@@ -122,10 +139,11 @@ extension TodayWeatherSummaryView {
       make.height.equalTo(50)
     }
     
-    partiView.snp.makeConstraints { make in
+    particulateMatterStackView.snp.makeConstraints { make in
       make.top.equalTo(weatherSummaryStackView.snp.bottom).offset(50)
-      make.size.equalTo(100)
-      make.centerX.equalToSuperview()
+      make.left.equalToSuperview().offset(20)
+      make.right.equalToSuperview().offset(-20)
+      //make.centerX.equalToSuperview()
     }
   }
 }

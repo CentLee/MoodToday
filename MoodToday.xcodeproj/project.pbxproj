@@ -36,6 +36,8 @@
 		F966671B2855CF2B00E5DF64 /* gConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966671A2855CF2B00E5DF64 /* gConstant.swift */; };
 		F966671D2855F8FF00E5DF64 /* ParticulateMatterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966671C2855F8FF00E5DF64 /* ParticulateMatterView.swift */; };
 		F966671F2855FC6600E5DF64 /* ParticulateMatterCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966671E2855FC6600E5DF64 /* ParticulateMatterCircleView.swift */; };
+		F96667222857373B00E5DF64 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96667212857373B00E5DF64 /* CLLocationManager+Rx.swift */; };
+		F966672428573EF300E5DF64 /* ParticulateMatterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966672328573EF300E5DF64 /* ParticulateMatterStackView.swift */; };
 		F97632B8284234AB00AE6854 /* MoodTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632B7284234AB00AE6854 /* MoodTodayTests.swift */; };
 		F97632C2284234AB00AE6854 /* MoodTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */; };
 		F97632C4284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */; };
@@ -91,6 +93,8 @@
 		F966671A2855CF2B00E5DF64 /* gConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gConstant.swift; sourceTree = "<group>"; };
 		F966671C2855F8FF00E5DF64 /* ParticulateMatterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticulateMatterView.swift; sourceTree = "<group>"; };
 		F966671E2855FC6600E5DF64 /* ParticulateMatterCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticulateMatterCircleView.swift; sourceTree = "<group>"; };
+		F96667212857373B00E5DF64 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		F966672328573EF300E5DF64 /* ParticulateMatterStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticulateMatterStackView.swift; sourceTree = "<group>"; };
 		F976329D284234AA00AE6854 /* MoodToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97632AE284234AB00AE6854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97632B3284234AB00AE6854 /* MoodTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +266,7 @@
 				F966670628530B1400E5DF64 /* TodayWeatherStackItemView.swift */,
 				F966671C2855F8FF00E5DF64 /* ParticulateMatterView.swift */,
 				F966671E2855FC6600E5DF64 /* ParticulateMatterCircleView.swift */,
+				F966672328573EF300E5DF64 /* ParticulateMatterStackView.swift */,
 			);
 			path = TodayWeatherView;
 			sourceTree = "<group>";
@@ -278,9 +283,18 @@
 		F96667192855CF2400E5DF64 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F96667202857372B00E5DF64 /* Extensions */,
 				F966671A2855CF2B00E5DF64 /* gConstant.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F96667202857372B00E5DF64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F96667212857373B00E5DF64 /* CLLocationManager+Rx.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F9763294284234AA00AE6854 = {
@@ -542,7 +556,9 @@
 				F966670F2855BFB800E5DF64 /* TodayWeatherContainerView.swift in Sources */,
 				F96666E2284CF2C800E5DF64 /* WeatherResponseDTO.swift in Sources */,
 				F966671F2855FC6600E5DF64 /* ParticulateMatterCircleView.swift in Sources */,
+				F966672428573EF300E5DF64 /* ParticulateMatterStackView.swift in Sources */,
 				F966671D2855F8FF00E5DF64 /* ParticulateMatterView.swift in Sources */,
+				F96667222857373B00E5DF64 /* CLLocationManager+Rx.swift in Sources */,
 				F96666F7284D27C500E5DF64 /* WeatherAPI.swift in Sources */,
 				F966671B2855CF2B00E5DF64 /* gConstant.swift in Sources */,
 				F96666C7284CF0F300E5DF64 /* BaseViewController.swift in Sources */,

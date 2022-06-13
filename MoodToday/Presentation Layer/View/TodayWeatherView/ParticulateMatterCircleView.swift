@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 @IBDesignable
 class ParticulateMatterCircleView: UIView
 {
@@ -24,33 +23,49 @@ class ParticulateMatterCircleView: UIView
   {
     didSet { print("ringThickness was set here") }
   }
-  
+  @IBInspectable var progressValue: Double = 0.0
+  {
+    didSet { print("progressValue was set here")}
+  }
   
   @IBInspectable var isSelected: Bool = true
   
+  let progressLayer = CAShapeLayer()
+  
   override func draw(_ rect: CGRect)
   {
-    
-    let dotPath = UIBezierPath(ovalIn: rect)
-    let shapeLayer = CAShapeLayer()
-    shapeLayer.path = dotPath.cgPath
-    shapeLayer.fillColor = mainColor.cgColor
-    layer.addSublayer(shapeLayer)
-    
-    if (isSelected) { drawRingFittingInsideView(rect: rect) }
+    drawRingFittingInsideView(rect: rect)
   }
   
   internal func drawRingFittingInsideView(rect: CGRect) {
-    let hw: CGFloat = ringThickness / 2
-    let circlePath = UIBezierPath(ovalIn: rect.insetBy(dx: hw, dy: hw))
-    
+    let circularPath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0),
+                                    radius: 30, startAngle: -.pi / 2, endAngle: 3 * .pi / 2, clockwise: true)
     let shapeLayer = CAShapeLayer()
-    shapeLayer.path = circlePath.cgPath
+    shapeLayer.path = circularPath.cgPath
     shapeLayer.fillColor = UIColor.clear.cgColor
     shapeLayer.strokeColor = ringColor.cgColor
     shapeLayer.lineWidth = ringThickness
     layer.addSublayer(shapeLayer)
+
+    progressLayer.path = circularPath.cgPath
+    progressLayer.fillColor = UIColor.clear.cgColor
+    progressLayer.strokeColor = UIColor.blue.cgColor
+    progressLayer.strokeEnd = 0.0
+    progressLayer.lineWidth = 6
+    //progressLayer.strokeEnd = value/100.0
+    layer.addSublayer(progressLayer)
     
-    Measurement(value: 13/200, unit: <#T##Unit#>)
+    setProgressWithAnimation(duration: 0.5, value: progressValue/100.0)
   }
+  
+  func setProgressWithAnimation(duration: TimeInterval, value: Double) {
+     let animation = CABasicAnimation(keyPath: "strokeEnd")
+     animation.duration = duration
+     animation.fromValue = 0
+     animation.toValue = value
+    animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+    progressLayer.strokeEnd = CGFloat(value)
+    progressLayer.add(animation, forKey: "animateprogress")
+  }
+  
 }

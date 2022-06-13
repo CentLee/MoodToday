@@ -8,6 +8,19 @@
 import Foundation
 import UIKit
 
+public func iPrint(_ objects:Any... , filename:String = #file,_ line:Int = #line, _ funcname:String = #function){ //debuging Print
+#if DEBUG
+  let dateFormatter = DateFormatter()
+  dateFormatter.dateFormat = "HH:mm:ss:SSS"
+  let file = URL(string:filename)?.lastPathComponent.components(separatedBy: ".").first ?? ""
+  print("💦info 🦋\(dateFormatter.string(from:Date())) 🌞\(file) 🍎line:\(line) 🌹\(funcname)🔥",terminator:"")
+  for object in objects{
+    print(object, terminator:"")
+  }
+  print("\n")
+#endif
+}
+
 func hexStringToUIColor (hex:String) -> UIColor {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 

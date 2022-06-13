@@ -27,5 +27,7 @@ final class TodayWeatherSummaryViewController: BaseViewController<TodayWeatherSu
   
   override func viewDidLoad() {
     print("dqw")
+    
+    todayWeatherView.particulateMatterView.circleView.ringColor = .gray
   }
 }
