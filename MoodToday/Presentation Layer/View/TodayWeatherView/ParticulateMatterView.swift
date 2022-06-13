@@ -14,7 +14,7 @@ import SwiftUI
 
 final class ParticulateMatterView: UIView {
   
-  lazy var containerView: ParticulateMatterCircleView = ParticulateMatterCircleView().then {
+  lazy var circleView: ParticulateMatterCircleView = ParticulateMatterCircleView().then {
     $0.mainColor = .clear
     $0.ringColor = .blue.withAlphaComponent(0.5)
     $0.ringThickness = 4
@@ -47,34 +47,18 @@ final class ParticulateMatterView: UIView {
 }
 extension ParticulateMatterView {
   private func defineView() {
-    addSubview(containerView)
+    addSubview(circleView)
     
-    containerView.addSubview(mainTitle)
+    circleView.addSubview(mainTitle)
     
-    containerView.snp.makeConstraints { make in
+    circleView.snp.makeConstraints { make in
       make.edges.equalToSuperview()
     }
     
     mainTitle.snp.makeConstraints { make in
       make.center.equalToSuperview()
     }
-    
-    //drawCircle()
-  }
-  
-  private func drawCircle() {
-    let circleLayer = CAShapeLayer()
-    
-    let center = CGPoint (x: containerView.frame.size.width / 2, y: containerView.frame.size.height / 2)
-    let circleRadius = containerView.frame.size.width / 2
-    let circlePath = UIBezierPath(arcCenter: center, radius: circleRadius, startAngle: CGFloat(M_PI), endAngle: CGFloat(M_PI * 4), clockwise: true)
-    circleLayer.path = circlePath.cgPath
-    circleLayer.strokeColor = UIColor.red.cgColor
-    circleLayer.fillColor = UIColor.clear.cgColor
-    circleLayer.lineWidth = 8
-    circleLayer.strokeStart = 0
-    circleLayer.strokeEnd  = 1
-    containerView.layer.insertSublayer(circleLayer, below: containerView.layer)
+
   }
 }
 
