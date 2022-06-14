@@ -20,7 +20,7 @@ final class TodayWeatherContainerViewController: BaseViewController<TodayWeather
   private var graphViewController: TodayWeatherGraphViewController? = nil
   private var currentSegmentIndex: Int = 0
   private let disposeBag = DisposeBag()
-  private var viewModel: TodayWeatherViewModel? = nil
+  private var viewModel: TodayWeatherViewModel?
   
   override func loadView() {
     self.view = TodayWeatherContainerView()
@@ -29,6 +29,8 @@ final class TodayWeatherContainerViewController: BaseViewController<TodayWeather
   override func viewDidLoad() {
     self.view.backgroundColor = .white
     setupChildViewController()
+    
+    bind()
   }
   
   convenience init(viewModel: TodayWeatherViewModel) {
@@ -72,7 +74,6 @@ extension TodayWeatherContainerViewController {
   }
   
   @objc private func changedSegment(_ sender: UIControl) {
-    //sender.isSelected = true
     containerView.isSelectedSegment.onNext(sender.tag)
     
     guard currentSegmentIndex != sender.tag else { return }
@@ -85,5 +86,10 @@ extension TodayWeatherContainerViewController {
       add(asChildViewController: graphViewController!)
       currentSegmentIndex = 1
     }
+  }
+  
+  private func bind() {
+    
+    
   }
 }

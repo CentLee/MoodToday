@@ -52,7 +52,6 @@ class ParticulateMatterCircleView: UIView
     progressLayer.strokeColor = UIColor.blue.cgColor
     progressLayer.strokeEnd = 0.0
     progressLayer.lineWidth = 6
-    //progressLayer.strokeEnd = value/100.0
     layer.addSublayer(progressLayer)
     
     setProgressWithAnimation(duration: 0.5, value: progressValue/100.0)
