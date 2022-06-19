@@ -11,9 +11,9 @@ final class AppDIContainer {
   static let shared: AppDIContainer = AppDIContainer()
   
   public func todayWeatherDependencies() -> TodayWeatherViewModel {
-    let useCase = FetchTodayWeatherUseCase(repository: TodayWeatherRepository())
-    
-    let viewModel = TodayWeatherViewModel(weatherUseCase: useCase)
+    let weatherUseCase = FetchTodayWeatherUseCase(repository: TodayWeatherRepository())
+    let particularMatterUseCase = FetchTodayPMUseCase(repository: TodayParticularMatterRepository())
+    let viewModel = TodayWeatherViewModel(weatherUseCase: weatherUseCase, particularMatterUseCase: particularMatterUseCase)
     
     return viewModel
   }

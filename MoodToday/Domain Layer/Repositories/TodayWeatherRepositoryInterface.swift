@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol TodayWeatherRepositoryInterface {
-  func fetchTodayWeather(requestValue: FetchTodayWeatherRequestValue) 
+  func fetchTodayWeather(requestValue: FetchTodayWeatherRequestValue) -> Observable<TodayWeatherEntity>
 }

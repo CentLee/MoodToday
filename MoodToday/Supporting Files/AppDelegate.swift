@@ -15,16 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    let mainVC = AgreementViewController(viewModel: AppDIContainer.shared.userLocationDependencies())//TodayWeatherContainerViewController(viewModel: AppDIContainer.shared.userLocationTodayWeatherDependencies())
+    //AgreementViewController(viewModel: AppDIContainer.shared.userLocationDependencies())
+    let mainVC = AgreementViewController(viewModel: AppDIContainer.shared.userLocationDependencies())//TodayWeatherContainerViewController(viewModel: AppDIContainer.shared.todayWeatherDependencies())
     window = UIWindow(frame: UIScreen.main.bounds)
     guard let window = window else { return false }
     window.rootViewController = mainVC
+    window.overrideUserInterfaceStyle = .light
     window.makeKeyAndVisible()
     return true
   }
-  
-  
-  
-  
 }
 

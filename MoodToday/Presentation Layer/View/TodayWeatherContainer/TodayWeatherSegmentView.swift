@@ -16,7 +16,9 @@ final class TodayWeatherSegmentView: UIView {
   lazy var segmentBut: UIButton = UIButton().then {
     $0.setTitleColor(hexStringToUIColor(hex: "#C3C3C5"), for: .normal)
     $0.setTitleColor(hexStringToUIColor(hex: "#16B9C5"), for: .selected)
+    $0.titleLabel?.font = getFont(style: "B", size: 15)
   }
+  
   lazy var segmentHighlightView: UIView = UIView().then {
     $0.backgroundColor = hexStringToUIColor(hex: "#16B9C5")
     $0.layer.cornerRadius = 1.5

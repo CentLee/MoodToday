@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol FetchTodayWeatherUseCaseInterface {
-  func execute(requestValue: FetchTodayWeatherRequestValue)
+  func execute(requestValue: FetchTodayWeatherRequestValue) -> Observable<TodayWeatherEntity>
 }
+
 struct FetchTodayWeatherRequestValue {
   let currentTime: String
   let currentDate: String
@@ -25,7 +27,7 @@ final class FetchTodayWeatherUseCase: FetchTodayWeatherUseCaseInterface {
     self.repository = repository
   }
   
-  func execute(requestValue: FetchTodayWeatherRequestValue) {
+  func execute(requestValue: FetchTodayWeatherRequestValue) -> Observable<TodayWeatherEntity> {
     repository.fetchTodayWeather(requestValue: requestValue)
   }
 }

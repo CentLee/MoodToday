@@ -19,7 +19,7 @@ final class TodayWeatherContainerView: UIView {
   
   lazy var headerTitle: UILabel = UILabel().then {
     $0.text = "오늘의 날씨"
-    $0.font = UIFont.italicSystemFont(ofSize: 30)
+    $0.font = getFont(style: "B", size: 30)
   }
   
   lazy var todayWeatherSummarySegment: TodayWeatherSegmentView = TodayWeatherSegmentView().then {
@@ -39,6 +39,12 @@ final class TodayWeatherContainerView: UIView {
   
   lazy var childContainerView: UIView = UIView().then {
     _ in
+  }
+  
+  lazy var loadingView: UIActivityIndicatorView = UIActivityIndicatorView().then {
+    $0.style = .large
+    $0.tintColor = .black
+    //$0.backgroundColor = .lightGray.withAlphaComponent(0.3)
   }
   
   private let disposeBag = DisposeBag()
@@ -62,7 +68,7 @@ extension TodayWeatherContainerView {
     
     addSubview(containerView)
     
-    [headerTitle, segmentStackView, childContainerView].forEach { containerView.addSubview($0) }
+    [headerTitle, segmentStackView, childContainerView, loadingView].forEach { containerView.addSubview($0) }
     [todayWeatherSummarySegment, todayWeatherGraphSegment].forEach { segmentStackView.addArrangedSubview($0) }
     
     containerView.snp.makeConstraints { make in
@@ -86,6 +92,11 @@ extension TodayWeatherContainerView {
       make.left.equalTo(headerTitle.snp.left)
       make.right.equalToSuperview().offset(-20)
       make.bottom.equalToSuperview()
+    }
+    
+    loadingView.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+      make.edges.equalToSuperview()
     }
   }
   

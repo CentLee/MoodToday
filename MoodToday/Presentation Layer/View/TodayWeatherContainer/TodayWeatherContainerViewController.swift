@@ -10,14 +10,14 @@ import RxSwift
 import Then
 import SnapKit
 import UIKit
-
+import SwiftDate
 final class TodayWeatherContainerViewController: BaseViewController<TodayWeatherContainerView> {
   fileprivate var containerView: TodayWeatherContainerView {
     return self.view as! TodayWeatherContainerView
   }
   
-  private var summaryViewController: TodayWeatherSummaryViewController? = nil
-  private var graphViewController: TodayWeatherGraphViewController? = nil
+  private var summaryViewController: TodayWeatherSummaryViewController?
+  private var graphViewController: TodayWeatherGraphViewController?
   private var currentSegmentIndex: Int = 0
   private let disposeBag = DisposeBag()
   private var viewModel: TodayWeatherViewModel?
@@ -37,6 +37,10 @@ final class TodayWeatherContainerViewController: BaseViewController<TodayWeather
     self.init()
     
     self.viewModel = viewModel
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    containerView.loadingView.startAnimating()
   }
   
 }
@@ -90,6 +94,25 @@ extension TodayWeatherContainerViewController {
   
   private func bind() {
     
+    guard let viewModel = viewModel else { return }
+    viewModel.input.didAppear()
+    
+    
+    viewModel.weatherData.filter { !$0.weatherList.weatherList.isEmpty }
+      .asDriver(onErrorJustReturn: TotalWeatherItems())
+      .drive(onNext: {[weak self] _ in
+        guard let self = self else { return }
+        self.containerView.loadingView.stopAnimating()
+      }).disposed(by: disposeBag)
+    
+    
+    for family in UIFont.familyNames {
+    iPrint("\(family)");
+                
+    for names in UIFont.fontNames(forFamilyName: family) {
+    iPrint("== \(names)");
+    }
+    }
     
   }
 }

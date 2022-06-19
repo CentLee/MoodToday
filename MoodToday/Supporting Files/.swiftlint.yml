@@ -3,7 +3,7 @@ disable_rule:
 included:
 excluded:
 - MoodToday/Supporting Files/AppDelegate.swift
-
+- TodayWeatherEntity.swift
 force_cast: warning # implicitly
 force_try:
   severity: warning # explicitly
@@ -31,7 +31,7 @@ file_length:
 ### min_length 및 max_length에 대한 warning/error를 설정할 수 있습니다.
 ### 규칙에 제외되는 특수한 이름도 지정할 수 있습니다.
 type_name:
-  min_length: 4 # only warning
+  min_length: 1 # only warning
   max_length: # warning and error
     warning: 40
     error: 50

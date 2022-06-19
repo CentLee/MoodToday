@@ -23,6 +23,8 @@ final class ParticulateMatterView: UIView {
   lazy var mainTitle: UILabel = UILabel().then {
     $0.numberOfLines = 2
     $0.textAlignment = .center
+    $0.font = UIFont.systemFont(ofSize: 12)
+    $0.textColor = .black
     $0.text = "14\n㎍/m³"
   }
   

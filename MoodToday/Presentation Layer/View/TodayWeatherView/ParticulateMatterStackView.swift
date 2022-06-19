@@ -29,7 +29,6 @@ final class ParticulateMatterStackView: UIView {
   
   lazy var mainTitle: UILabel = UILabel().then {
     $0.numberOfLines = 2
-    $0.textAlignment = .center
     $0.text = "14\n㎍/m³"
   }
   
@@ -69,12 +68,8 @@ extension ParticulateMatterStackView {
       make.edges.equalToSuperview()
     }
     
-//    particulateMatterStackView.snp.makeConstraints { make in
-//      make.edges.equalToSuperview()
-//    }
-    
     particulateMatterCircleView.snp.makeConstraints { make in
-      make.size.equalTo(30)
+      make.size.equalTo(40)
       make.top.equalToSuperview()
       make.centerX.equalToSuperview()
     }
@@ -88,12 +83,12 @@ extension ParticulateMatterStackView {
     }
     
     particulateMatterNameView.snp.makeConstraints { make in
-      make.top.equalTo(particulateMatterCircleView.snp.bottom).offset(30)
+      make.top.equalTo(particulateMatterCircleView.snp.bottom).offset(40)
       make.centerX.equalToSuperview()
     }
     
     particulateMatterConcentrationStateView.snp.makeConstraints { make in
-      make.top.equalTo(particulateMatterNameView.snp.bottom).offset(5)
+      make.top.equalTo(particulateMatterNameView.snp.bottom).offset(10)
       make.centerX.equalToSuperview()
     }
   }
