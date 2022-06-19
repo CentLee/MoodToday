@@ -8,6 +8,13 @@
 import Foundation
 import UIKit
 
+
+
+public func getFont(style: String, size: CGFloat) -> UIFont {
+  return UIFont(name: "NIXGON\(style)-Vb", size: size) ?? UIFont.systemFont(ofSize: size)
+}
+
+
 public func iPrint(_ objects:Any... , filename:String = #file,_ line:Int = #line, _ funcname:String = #function){ //debuging Print
 #if DEBUG
   let dateFormatter = DateFormatter()

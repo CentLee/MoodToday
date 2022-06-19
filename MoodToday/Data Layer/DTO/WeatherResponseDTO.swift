@@ -9,13 +9,29 @@ import Foundation
 
 
 struct WeatherResponseDTO: Decodable {
-  
-  var currentDate: String
-  var currentTime: String
-  var weatherList: [WeatherDTO]
+  var response: WeatherJSONResponseDTO
 }
 
 extension WeatherResponseDTO {
+  struct WeatherJSONResponseDTO: Decodable {
+    var header: WeatherJSONHeader
+    var body: WeatherJSONBody
+  }
+  
+  struct WeatherJSONHeader: Decodable {
+    var resultCode: String
+    var resultMsg: String
+  }
+  
+  struct WeatherJSONBody: Decodable {
+    var dataType: String
+    var items: WeatherItemsDTO
+  }
+  
+  struct WeatherItemsDTO: Decodable {
+    var item: [WeatherDTO]
+  }
+  
   struct WeatherDTO: Decodable {
     var category: String
     var baseDate: String
@@ -23,11 +39,14 @@ extension WeatherResponseDTO {
     var fcstDate: String
     var fcstTime: String
     var fcstValue: String
+    
+    func toDomain() -> Weather {
+      return .init(category: category, baseDate: baseDate, baseTime: baseTime,
+                   fcstDate: fcstDate, fcstTime: fcstTime, fcstValue: fcstValue)
+    }
   }
-  func toDomain() {
-    //시간별 데이터가 고정값이 카테고리별로 1개씩 총 12개 존재한다.
-    //12개씩 끊어서 배열로 기상데이터를 만들어서 엔티티로 값을 전달한다.
-    //return .init()
+  
+  func toDomain() -> TodayWeatherEntity {
+    return .init(weatherList: self.response.body.items.item.map { $0.toDomain() })
   }
 }
-

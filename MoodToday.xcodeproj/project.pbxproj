@@ -48,6 +48,16 @@
 		F97632DD284236BD00AE6854 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F97632DC284236BD00AE6854 /* Then */; };
 		F97632E0284236FD00AE6854 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F97632DF284236FD00AE6854 /* SnapKit */; };
 		F97632E72842378500AE6854 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97632E62842378500AE6854 /* AppDIContainer.swift */; };
+		F998F00B285E065200A1C363 /* LocationConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F00A285E065200A1C363 /* LocationConverter.swift */; };
+		F998F00D285E20BF00A1C363 /* TodayParticularMatterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F00C285E20BF00A1C363 /* TodayParticularMatterRepository.swift */; };
+		F998F00F285E20DE00A1C363 /* TodayParticularMatterRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F00E285E20DE00A1C363 /* TodayParticularMatterRepositoryInterface.swift */; };
+		F998F011285E210400A1C363 /* ParticularMatterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F010285E210400A1C363 /* ParticularMatterAPI.swift */; };
+		F998F013285E249800A1C363 /* FetchTodayPMUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F012285E249800A1C363 /* FetchTodayPMUseCase.swift */; };
+		F998F015285E5FB400A1C363 /* ParticularMatterResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F014285E5FB400A1C363 /* ParticularMatterResponseDTO.swift */; };
+		F998F017285E60DE00A1C363 /* TodayParticularMatterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F016285E60DE00A1C363 /* TodayParticularMatterEntity.swift */; };
+		F99A4EA2285F2753008F6979 /* NIXGONFONTS B 2.0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F99A4E9F285F2753008F6979 /* NIXGONFONTS B 2.0.ttf */; };
+		F99A4EA3285F2753008F6979 /* NIXGONFONTS M 2.0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F99A4EA0285F2753008F6979 /* NIXGONFONTS M 2.0.ttf */; };
+		F99A4EA4285F2753008F6979 /* NIXGONFONTS L 2.0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F99A4EA1285F2753008F6979 /* NIXGONFONTS L 2.0.ttf */; };
 		F9E4A9BE285890C6002363DB /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4A9BD285890C6002363DB /* AgreementViewController.swift */; };
 		F9E4A9C0285890CD002363DB /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4A9BF285890CD002363DB /* AgreementView.swift */; };
 		F9E4A9C22858910C002363DB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4A9C12858910C002363DB /* LocationManager.swift */; };
@@ -110,6 +120,16 @@
 		F97632C1284234AB00AE6854 /* MoodTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTodayUITests.swift; sourceTree = "<group>"; };
 		F97632C3284234AB00AE6854 /* MoodTodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F97632E62842378500AE6854 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		F998F00A285E065200A1C363 /* LocationConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationConverter.swift; sourceTree = "<group>"; };
+		F998F00C285E20BF00A1C363 /* TodayParticularMatterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayParticularMatterRepository.swift; sourceTree = "<group>"; };
+		F998F00E285E20DE00A1C363 /* TodayParticularMatterRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayParticularMatterRepositoryInterface.swift; sourceTree = "<group>"; };
+		F998F010285E210400A1C363 /* ParticularMatterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticularMatterAPI.swift; sourceTree = "<group>"; };
+		F998F012285E249800A1C363 /* FetchTodayPMUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTodayPMUseCase.swift; sourceTree = "<group>"; };
+		F998F014285E5FB400A1C363 /* ParticularMatterResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticularMatterResponseDTO.swift; sourceTree = "<group>"; };
+		F998F016285E60DE00A1C363 /* TodayParticularMatterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayParticularMatterEntity.swift; sourceTree = "<group>"; };
+		F99A4E9F285F2753008F6979 /* NIXGONFONTS B 2.0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NIXGONFONTS B 2.0.ttf"; sourceTree = "<group>"; };
+		F99A4EA0285F2753008F6979 /* NIXGONFONTS M 2.0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NIXGONFONTS M 2.0.ttf"; sourceTree = "<group>"; };
+		F99A4EA1285F2753008F6979 /* NIXGONFONTS L 2.0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NIXGONFONTS L 2.0.ttf"; sourceTree = "<group>"; };
 		F9E4A9BD285890C6002363DB /* AgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
 		F9E4A9BF285890CD002363DB /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 		F9E4A9C12858910C002363DB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -157,6 +177,7 @@
 		F96666BD284CF0F300E5DF64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F99A4E9E285F2744008F6979 /* Fonts */,
 				F96667192855CF2400E5DF64 /* Utils */,
 				F96666BE284CF0F300E5DF64 /* BaseViewController.swift */,
 				F96666C0284CF0F300E5DF64 /* Assets.xcassets */,
@@ -164,7 +185,6 @@
 				F96666C3284CF0F300E5DF64 /* Main.storyboard */,
 				F96666C5284CF0F300E5DF64 /* UIPreView.swift */,
 				F96666C6284CF0F300E5DF64 /* AppDelegate.swift */,
-				F9E4A9C12858910C002363DB /* LocationManager.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				F96666E3284CF2E800E5DF64 /* TodayWeatherEntity.swift */,
+				F998F016285E60DE00A1C363 /* TodayParticularMatterEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -202,6 +223,7 @@
 			children = (
 				F96666EF284D263A00E5DF64 /* FetchTodayWeatherUseCase.swift */,
 				F9E4A9C5285898A3002363DB /* UpdateUserLocationUseCase.swift */,
+				F998F012285E249800A1C363 /* FetchTodayPMUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -218,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				F96666E1284CF2C800E5DF64 /* WeatherResponseDTO.swift */,
+				F998F014285E5FB400A1C363 /* ParticularMatterResponseDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -247,6 +270,7 @@
 			children = (
 				F96666F1284D267600E5DF64 /* TodayWeatherRepositoryInterface.swift */,
 				F9E4A9C728589975002363DB /* UserLocationRepositoryInterface.swift */,
+				F998F00E285E20DE00A1C363 /* TodayParticularMatterRepositoryInterface.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -256,6 +280,7 @@
 			children = (
 				F96666F3284D268600E5DF64 /* TodayWeatherRepository.swift */,
 				F9E4A9C92858999A002363DB /* UserLocationRepository.swift */,
+				F998F00C285E20BF00A1C363 /* TodayParticularMatterRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -264,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				F96666F6284D27C500E5DF64 /* WeatherAPI.swift */,
+				F998F010285E210400A1C363 /* ParticularMatterAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -305,6 +331,8 @@
 			children = (
 				F96667202857372B00E5DF64 /* Extensions */,
 				F966671A2855CF2B00E5DF64 /* gConstant.swift */,
+				F998F00A285E065200A1C363 /* LocationConverter.swift */,
+				F9E4A9C12858910C002363DB /* LocationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -383,6 +411,16 @@
 				F96666E9284D24CA00E5DF64 /* View */,
 			);
 			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		F99A4E9E285F2744008F6979 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F99A4E9F285F2753008F6979 /* NIXGONFONTS B 2.0.ttf */,
+				F99A4EA1285F2753008F6979 /* NIXGONFONTS L 2.0.ttf */,
+				F99A4EA0285F2753008F6979 /* NIXGONFONTS M 2.0.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F9E4A9BC285890A5002363DB /* AgreementView */ = {
@@ -522,9 +560,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F96666CB284CF0F300E5DF64 /* Main.storyboard in Resources */,
+				F99A4EA3285F2753008F6979 /* NIXGONFONTS M 2.0.ttf in Resources */,
 				F96666C8284CF0F300E5DF64 /* .swiftlint.yml in Resources */,
+				F99A4EA4285F2753008F6979 /* NIXGONFONTS L 2.0.ttf in Resources */,
 				F96666CA284CF0F300E5DF64 /* LaunchScreen.storyboard in Resources */,
 				F96666C9284CF0F300E5DF64 /* Assets.xcassets in Resources */,
+				F99A4EA2285F2753008F6979 /* NIXGONFONTS B 2.0.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,17 +614,24 @@
 				F96667112855C1BE00E5DF64 /* TodayWeatherGraphViewController.swift in Sources */,
 				F96666F0284D263A00E5DF64 /* FetchTodayWeatherUseCase.swift in Sources */,
 				F9E4A9BE285890C6002363DB /* AgreementViewController.swift in Sources */,
+				F998F00B285E065200A1C363 /* LocationConverter.swift in Sources */,
 				F96666E4284CF2E800E5DF64 /* TodayWeatherEntity.swift in Sources */,
+				F998F013285E249800A1C363 /* FetchTodayPMUseCase.swift in Sources */,
 				F96667182855CE9000E5DF64 /* TodayWeatherSegmentView.swift in Sources */,
 				F96666DE284CF27E00E5DF64 /* TodayWeatherSummaryViewController.swift in Sources */,
 				F96666CD284CF0F300E5DF64 /* AppDelegate.swift in Sources */,
+				F998F00D285E20BF00A1C363 /* TodayParticularMatterRepository.swift in Sources */,
 				F96666F4284D268600E5DF64 /* TodayWeatherRepository.swift in Sources */,
 				F96666F9284D33CB00E5DF64 /* TodayWeatherSummaryView.swift in Sources */,
+				F998F00F285E20DE00A1C363 /* TodayParticularMatterRepositoryInterface.swift in Sources */,
 				F9E4A9CA2858999A002363DB /* UserLocationRepository.swift in Sources */,
 				F96666F2284D267600E5DF64 /* TodayWeatherRepositoryInterface.swift in Sources */,
 				F96666E6284CF3A900E5DF64 /* TodayWeatherViewModel.swift in Sources */,
+				F998F011285E210400A1C363 /* ParticularMatterAPI.swift in Sources */,
 				F9E4A9C6285898A3002363DB /* UpdateUserLocationUseCase.swift in Sources */,
+				F998F015285E5FB400A1C363 /* ParticularMatterResponseDTO.swift in Sources */,
 				F96666CC284CF0F300E5DF64 /* UIPreView.swift in Sources */,
+				F998F017285E60DE00A1C363 /* TodayParticularMatterEntity.swift in Sources */,
 				F96667132855C1C600E5DF64 /* TodayWeahterGraphView.swift in Sources */,
 				F966670F2855BFB800E5DF64 /* TodayWeatherContainerView.swift in Sources */,
 				F96666E2284CF2C800E5DF64 /* WeatherResponseDTO.swift in Sources */,

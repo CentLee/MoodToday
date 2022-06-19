@@ -27,7 +27,10 @@ class ParticulateMatterCircleView: UIView
   {
     didSet { print("progressValue was set here")}
   }
-  
+  @IBInspectable var progressColor: UIColor = UIColor.clear
+  {
+    didSet { print("wow") }
+  }
   @IBInspectable var isSelected: Bool = true
   
   let progressLayer = CAShapeLayer()
@@ -39,19 +42,19 @@ class ParticulateMatterCircleView: UIView
   
   internal func drawRingFittingInsideView(rect: CGRect) {
     let circularPath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0),
-                                    radius: 30, startAngle: -.pi / 2, endAngle: 3 * .pi / 2, clockwise: true)
+                                    radius: 40, startAngle: -.pi / 2, endAngle: 3 * .pi / 2, clockwise: true)
     let shapeLayer = CAShapeLayer()
     shapeLayer.path = circularPath.cgPath
-    shapeLayer.fillColor = UIColor.clear.cgColor
+    shapeLayer.fillColor = mainColor.cgColor
     shapeLayer.strokeColor = ringColor.cgColor
     shapeLayer.lineWidth = ringThickness
     layer.addSublayer(shapeLayer)
 
     progressLayer.path = circularPath.cgPath
     progressLayer.fillColor = UIColor.clear.cgColor
-    progressLayer.strokeColor = UIColor.blue.cgColor
+    progressLayer.strokeColor = progressColor.cgColor
     progressLayer.strokeEnd = 0.0
-    progressLayer.lineWidth = 6
+    progressLayer.lineWidth = 8
     layer.addSublayer(progressLayer)
     
     setProgressWithAnimation(duration: 0.5, value: progressValue/100.0)

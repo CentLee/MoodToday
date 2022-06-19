@@ -20,17 +20,24 @@ final class TodayWeatherSummaryView: UIView {
   }
   
   lazy var headerView: UIView = UIView().then {
-    $0.backgroundColor = .lightGray
+    $0.backgroundColor = .lightGray.withAlphaComponent(0.2)
+    $0.layer.cornerRadius = 10
   }
+  
   lazy var locationTitle: UILabel = UILabel().then {
     $0.textColor = .black
-    $0.text = "서울특별시 동작구 신대방제2동"
+    $0.text = "-"
+    $0.font = getFont(style: "M", size: 15)
+  }
+  
+  lazy var fetchTimeTitle: UILabel = UILabel().then {
+    $0.font = getFont(style: "L", size: 13)
   }
   
   lazy var temperatureTitle: UILabel = UILabel().then {
     $0.textColor = .black
-    $0.text = "27.1"
-    $0.font = UIFont.boldSystemFont(ofSize: 30)
+    $0.text = "0"
+    $0.font = getFont(style: "B", size: 30)
   }
   
   lazy var weatherSummaryStackView: UIStackView = UIStackView().then {
@@ -41,17 +48,26 @@ final class TodayWeatherSummaryView: UIView {
   
   lazy var humidityStackView: TodayWeatherStackItemView = TodayWeatherStackItemView().then {
     $0.stackItemTitle.text = "습도"
-    $0.stackItemSubTitle.text = "50%"
+    $0.stackItemSubTitle.text = "0%"
+    $0.stackItemImage.image = UIImage(named: "humidity")
+    $0.stackItemTitle.font = getFont(style: "B", size: 15)
+    $0.stackItemSubTitle.font = getFont(style: "L", size: 13)
   }
   
   lazy var windyStackView: TodayWeatherStackItemView = TodayWeatherStackItemView().then {
     $0.stackItemTitle.text = "바람"
-    $0.stackItemSubTitle.text = "남서 1.8 m/s"
+    $0.stackItemSubTitle.text = " - m/s"
+    $0.stackItemImage.image = UIImage(named: "windy")
+    $0.stackItemTitle.font = getFont(style: "B", size: 15)
+    $0.stackItemSubTitle.font = getFont(style: "L", size: 13)
   }
   
   lazy var rainStackView: TodayWeatherStackItemView = TodayWeatherStackItemView().then {
     $0.stackItemTitle.text = "강수량"
     $0.stackItemSubTitle.text = "- mm"
+    $0.stackItemImage.image = UIImage(named: "rainy-day")
+    $0.stackItemTitle.font = getFont(style: "B", size: 15)
+    $0.stackItemSubTitle.font = getFont(style: "L", size: 13)
   }
   // under 미세먼지 뷰 추가 예정
   
@@ -63,17 +79,20 @@ final class TodayWeatherSummaryView: UIView {
   
   lazy var ultraParticulateMatterView: ParticulateMatterStackView = ParticulateMatterStackView().then {
     $0.particulateMatterNameView.text = "초미세먼지(PM2.5)"
-    $0.mainTitle.text = "12\n㎍/m³"
-    $0.circleView.progressValue = 12
-    $0.particulateMatterConcentrationStateView.text = "좋음"
+    $0.mainTitle.text = "0\n㎍/m³"
+    $0.mainTitle.textAlignment = .center
+    $0.particulateMatterNameView.font = getFont(style: "B", size: 17)
+    $0.mainTitle.font = getFont(style: "M", size: 15)
+    $0.particulateMatterConcentrationStateView.font = getFont(style: "M", size: 15)
   }
   
   lazy var particulateMatterView: ParticulateMatterStackView = ParticulateMatterStackView().then {
     $0.particulateMatterNameView.text = "미세먼지(PM10)"
-    $0.mainTitle.text = "23\n㎍/m³"
-    $0.circleView.progressValue = 23
-    $0.particulateMatterConcentrationStateView.text = "좋음"
-    //$0.particulateMatterCircleView.circleView.ringColor = .
+    $0.mainTitle.text = "0\n㎍/m³"
+    $0.mainTitle.textAlignment = .center
+    $0.particulateMatterNameView.font = getFont(style: "B", size: 17)
+    $0.mainTitle.font = getFont(style: "M", size: 15)
+    $0.particulateMatterConcentrationStateView.font = getFont(style: "M", size: 15)
   }
   
   
@@ -93,9 +112,8 @@ extension TodayWeatherSummaryView {
   private func defineView() {
     addSubview(contentScrollView)
     contentScrollView.addSubview(containerView)
-    //containerView.addSubview(contentScrollView)
-    
-    [headerView, temperatureTitle, weatherSummaryStackView]
+
+    [headerView, fetchTimeTitle, temperatureTitle, weatherSummaryStackView]
       .forEach { containerView.addSubview($0)}
     
     headerView.addSubview(locationTitle)
@@ -128,9 +146,14 @@ extension TodayWeatherSummaryView {
       make.center.equalToSuperview()
     }
     
+    fetchTimeTitle.snp.makeConstraints { make in
+      make.trailing.equalToSuperview()
+      make.top.equalTo(headerView.snp.bottom).offset(20)
+    }
+    
     temperatureTitle.snp.makeConstraints { make in
       make.centerX.equalToSuperview()
-      make.top.equalTo(headerView.snp.bottom).offset(20)
+      make.top.equalTo(fetchTimeTitle.snp.bottom).offset(20)
     }
     
     weatherSummaryStackView.snp.makeConstraints { make in
@@ -140,7 +163,7 @@ extension TodayWeatherSummaryView {
     }
     
     particulateMatterStackView.snp.makeConstraints { make in
-      make.top.equalTo(weatherSummaryStackView.snp.bottom).offset(50)
+      make.top.equalTo(weatherSummaryStackView.snp.bottom).offset(100)
       make.left.equalToSuperview().offset(20)
       make.right.equalToSuperview().offset(-20)
       //make.centerX.equalToSuperview()

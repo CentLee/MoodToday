@@ -35,7 +35,6 @@ final class LocationManager {
       .subscribe(onNext: { [weak self] location in
         guard let self = self else { return }
         self.currentLocation.accept(Location(latitude: location.latitude, longitude: location.longitude))
-        print(location.latitude, location.longitude)
       }).disposed(by: disposeBag)
     
     locationManager.startUpdatingLocation()
