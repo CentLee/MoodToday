@@ -9,5 +9,5 @@
 - Network: Alamofire + Moya
 - Other: SwiftLint, SwiftDate, IBAnimatable, RxSwift
 
-
-# 7월 3일 이후로 1차 고도화 예정 ( 기능 추가 및 SwiftUI 뷰 구성 및 UseCase들 Unit Testing Code 짜보기 )
+## MoodToday Activity Diagram
+![MoodToday-ActivityDiagram drawio](https://user-images.githubusercontent.com/35019052/179345142-93d7d950-d1e1-4bbd-bf6b-b58f92f52d4f.png)
