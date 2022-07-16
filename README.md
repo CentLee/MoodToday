@@ -10,4 +10,5 @@
 - Other: SwiftLint, SwiftDate, IBAnimatable, RxSwift
 
 ## MoodToday Activity Diagram
-![MoodToday-ActivityDiagram drawio](https://user-images.githubusercontent.com/35019052/179345142-93d7d950-d1e1-4bbd-bf6b-b58f92f52d4f.png)
+![MoodToday-ActivityDiagram drawio](https://user-images.githubusercontent.com/35019052/179345306-b86d30c1-624e-436b-ba19-f24ae39a2e53.png)
+
